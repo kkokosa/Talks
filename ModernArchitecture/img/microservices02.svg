@@ -15,8 +15,8 @@
    id="svg4531"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="microservices01.svg"
-   inkscape:export-filename="F:\GithubProjects\Talks\ModernArchitecture\img\ms01.png"
+   sodipodi:docname="microservices02.svg"
+   inkscape:export-filename="F:\GithubProjects\Talks\ModernArchitecture\img\ms03.png"
    inkscape:export-xdpi="179.92397"
    inkscape:export-ydpi="179.92397">
   <defs
@@ -163,5 +163,75 @@
            id="tspan12590"
            sodipodi:role="line">µS</tspan></text>
     </g>
+    <g
+       id="g12608"
+       transform="translate(94.954341,-62.124381)"
+       inkscape:export-xdpi="179.92397"
+       inkscape:export-ydpi="179.92397">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.65499997;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect12610"
+         width="26.300858"
+         height="24.524689"
+         x="279.81436"
+         y="468.75201"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:9.82326221px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="292.86102"
+         y="484.62692"
+         id="text12612"
+         sodipodi:linespacing="125%"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           sodipodi:role="line"
+           id="tspan12614"
+           x="292.86102"
+           y="484.62692">µS</tspan></text>
+    </g>
+    <g
+       transform="translate(143.94674,-61.619305)"
+       id="g12616"
+       inkscape:export-xdpi="179.92397"
+       inkscape:export-ydpi="179.92397">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         y="468.75201"
+         x="279.81436"
+         height="24.524689"
+         width="26.300858"
+         id="rect12618"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.65499997;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         sodipodi:linespacing="125%"
+         id="text12620"
+         y="484.62692"
+         x="292.86102"
+         style="font-style:normal;font-weight:normal;font-size:9.82326221px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="484.62692"
+           x="292.86102"
+           id="tspan12622"
+           sodipodi:role="line">µS</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 344.9671,424.04733 27.77919,-5.55584"
+       id="path12676"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="179.92397"
+       inkscape:export-ydpi="179.92397" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 421.23361,419.50164 -18.18274,-0.50507"
+       id="path12696"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="179.92397"
+       inkscape:export-ydpi="179.92397" />
   </g>
 </svg>
