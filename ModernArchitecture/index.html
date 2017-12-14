@@ -1,0 +1,237 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Modern architecture</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Modern architecture of web application</h2>
+					<h4>@KonradKokosa</h4>
+				</section>
+				<section>
+					coś o mnie
+				</section>
+				<section>
+					<section>
+						<h3>Wprowadzenie</h3>
+					</section>
+					<section>
+						[ piramida działa/jakość/wydajność* (bezpieczeństwo) ]
+					</section>
+					<section>
+						<h4>Google Rail</h4>
+						<p><img src="./img/rail.png"></p>
+						<small>https://developers.google.com/web/fundamentals/performance/rail</small>
+					</section>
+					<section>
+						<p><img src="./img/rail2.png"></p>
+					</section>
+					<section>
+						Architecture vs design
+					</section>					
+				</section>
+				
+				<section>
+					<section>
+						<h3>Było...</h3>
+					</section>
+					<section>
+						<p><img src="./img/300px-ENIAC-changing_a_tube.jpg"></p>
+						<p><img src="./img/Eniac.jpg"></p>
+						<small>https://pl.wikipedia.org/wiki/ENIAC</small>
+					</section>
+					<section>
+						[ komputer - człowiek ]
+						<aside class="notes">
+							Czasy odpowiedzi to były minuty ale i tak szybciej niż dobę obliczeń przez człowieka.
+							Ciąg obliczeń.
+						</aside>						
+					</section>
+					<section>
+						[ funkcja ]
+					</section>
+					<section>
+						[ więcej funkcji ]
+					</section>
+					<section>
+						[ jeszcze więcej funkcji ]
+					</section>
+					<section>
+						<h4>#01 Monolit</h4>
+						[ monolit ]
+						<aside class="notes">
+							Mainframe'y, nieutrzymywalne systemy, ale też proste projekty na studiach, desktopach.
+						</aside>						
+					</section>
+					<section>
+						<p><img src="./img/Spaghetti-and-Meatballs-Recipe-3-600x400.jpg"></p>
+					</section>
+					<section>
+						<p><img src="./img/kluski.png"></p>
+					</section>					
+					<section>
+						[ jeszcze więcej funkcji - layers ]
+					</section>
+					<section>
+						[ jeszcze więcej funkcji - tiers ]
+					</section>
+					<section>
+						<h4>#02 N-tier</h4>
+						[ n-tier ]
+						<aside class="notes">
+							Warstwy wołają tylko +1/-1. Layer vs tier.
+						</aside>						
+					</section>					
+					<section>
+						[ GUI - BL - DAO - Proxy - Service - BL - DAO ]
+						<aside class="notes">
+							Komputery stacjonarne, pudełkowe programy. Kaskadowe wytwarzanie (waterfall).
+						</aside>						
+					</section>
+					<section>
+						[ jeszcze więcej funkcji - tiers (jeden ludzik)]
+					</section>			
+					<section>
+						[ jeszcze więcej funkcji - tiers (wiele ludzików)]
+					</section>
+					<section>
+						[ jeszcze więcej funkcji - tiers (wiele ludzików) - scale up]
+					</section>
+					<section>
+						[ jeszcze więcej funkcji - tiers (wiele ludzików) - scale out]
+					</section>
+					<section>
+						[ SOA ]
+					</section>				
+					<section>
+						<h4>Big Ball of Mud</h4>
+						<p><img src="./img/survivor102412.jpg"></p>
+						<small>http://www.buddytv.com/survivor/season-25.aspx</small>
+					</section>									
+					<section>
+						<p>Architektura:</p>
+						<ul>
+							<li class="fragment">ograniczenia naszego umysłu</li>
+							<li class="fragment">zależności</li>
+							<li class="fragment">skalowalność</li>
+							<li class="fragment">...</li>
+						</ul>											
+						<aside class="notes">
+							Z ograniczeń naszego umysłu - tworzenie oprogramowania z building blocków, które potrafimy objąć rozumem
+						</aside>	
+					</section>						
+				</section>
+				<section>
+					<section>
+						<h3>Jest...</h3>
+					</section>
+					<section>
+						<h4>#03 Hexagonal architecture</h4>
+						<small>aka "Ports and adapters" lub "Onion architecture"</small>
+						<p><img src="./img/hexagonal.png"></p>
+					</section>					
+				</section>
+				<section>
+					<section>
+						<h3>Będzie...?</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Podsumowanie</h3>
+					</section>
+					<section>
+						<h4>Dobre intencje</h4>
+						<p><img src="./img/thelifeofengineer.jpg"></p>
+						 <small class="fragment">Overengineering</small>
+						<aside class="notes">
+							Zachłyśnięcię się w moim projekcie, żeby teraz nie zachłystać się architekturami. Bunkrujemy się YAGNI, KISS, DRY, SOLID...
+						</aside>
+					</section>	
+					<section>
+						<h4>Budujemy katedrę...</h4>
+						<p><img src="./img/1200px-Sagrada_Familia_01.jpg"></p>
+						<aside class="notes">
+							Boimy się kosztu podjęcia złej decyzji na samym początku.
+						</aside>						
+					</section>					
+					<section>
+						<h4>Evolutionary architecture</h4>
+						<p>Jedno jest pewne - nastąpi zmiana</p>
+						<aside class="notes">
+							Tworzenie systemu na wyrost, zbyt eleastyczny, zbyt rozdmuchany, wróżymy czym może jeszcze nas kiedyś zaskoczyć wymaganie biznesowe - ale ono może się nigdy nie pojawić, albo pojawić całkiem inne.
+						</aside>						
+					</section>					
+				</section>
+				
+				
+				
+				<!-- For referece -->
+				<section>
+                    <section>
+                        <p>Same local images scaled down to demo sitting side by side</p>
+						<p><img src="./img/thelifeofengineer.jpg"></p>
+                        <small class="fragment">Let's dig in!</small>
+						<aside class="notes">
+							aaa
+						</aside>						
+                    </section>				
+                    <section>
+                        ... było
+						<aside class="notes">
+							aaa
+						</aside>						
+                    </section>		
+					<section>
+						<h4>Kontrakt</h4>
+						<ul>
+							<li class="fragment">przerwy - 10 minut</li>
+							<li class="fragment">telefon</li>
+							<li class="fragment">maile</li>
+							<li class="fragment">...</li>
+						</ul>
+					</section>						
+				</section>           
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				transition: 'none',
+				
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
