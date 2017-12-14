@@ -61,20 +61,23 @@
 						<small>https://pl.wikipedia.org/wiki/ENIAC</small>
 					</section>
 					<section>
-						[ komputer - człowiek ]
+						<p><img src="./img/komputerczlowiek.png"></p>
 						<aside class="notes">
 							Czasy odpowiedzi to były minuty ale i tak szybciej niż dobę obliczeń przez człowieka.
 							Ciąg obliczeń.
 						</aside>						
 					</section>
 					<section>
-						[ funkcja ]
+						<p><img src="./img/funkcja1.png"></p>
 					</section>
 					<section>
-						[ więcej funkcji ]
+						<p><img src="./img/funkcja2.png"></p>
 					</section>
 					<section>
-						[ jeszcze więcej funkcji ]
+						<p><img src="./img/funkcja3.png"></p>
+					</section>
+					<section>
+						<p><img src="./img/funkcja4.png"></p>
 					</section>
 					<section>
 						<h4>#01 Monolit</h4>
@@ -88,6 +91,7 @@
 					</section>
 					<section>
 						<p><img src="./img/kluski.png"></p>
+						<small>OOP: spaghetti -> kluski</small>
 					</section>					
 					<section>
 						[ jeszcze więcej funkcji - layers ]
@@ -105,7 +109,7 @@
 					<section>
 						[ GUI - BL - DAO - Proxy - Service - BL - DAO ]
 						<aside class="notes">
-							Komputery stacjonarne, pudełkowe programy. Kaskadowe wytwarzanie (waterfall).
+							Komputery stacjonarne, pudełkowe programy. Kaskadowe wytwarzanie (waterfall). CRUD.
 						</aside>						
 					</section>
 					<section>
@@ -186,22 +190,53 @@
 						</aside>
 					</section>
 					<section>
+						<p><img src="./img/microservices.jpg"></p>
+					</section>						
+					<section>
+						[ mikroserwisy - kolejne serwisy + transaction boundary]
+						<small class="fragment">eventual consistency</small>
+						<aside class="notes">
+							Skalowalność - eventual consistency vs natychmiastowa spójność w wyniku ścisłej transakcyjności
+						</aside>
+					</section>						
+					<section>
 						<h4>Toolbox</h4>
 					</section>		
 					<section>
-						<h4>CQRS</h4>
+						<h4>Saga</h4>
+						<aside class="notes">
+							Wydaje się, że głównie tutaj właśnie jesteśmy dlatego na chwilę się zatrzymam.
+						</aside>						
+					</section>					
+					<section>
+						[ saga - #1 ]
 					</section>
 					<section>
 						<h4>Saga</h4>
-					</section>					
+						<ul>
+							<li class="fragment">Choreografia - rozproszone podejmowanie decyzji</li>
+							<li class="fragment">Orkiestracja - scentralizowane podejmowanie decyzji</li>
+							<li class="fragment">...</li>
+						</ul>
+						<aside class="notes">
+							Orkiestracja - tak naprawdę realizują jakąś maszynę stanów (a biznes bardzo często da się opisać za pomocą jakiegoś workflow).
+						</aside>	
+					</section>						
+					<section>
+						<h4>CQRS</h4>
+						<p><img src="./img/cqrs.png"></p>
+						<small>https://martinfowler.com/bliki/CQRS.html</small>
+					</section>
+					<section>
+						<h4>#07 Event sourcing</h4>
+						<p><img src="./img/event-sourcing-overview.png"></p>
+						<small>https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing</small>
+					</section>									
 					<section>
 						<h4>#05 Reactive architecture</h4>
 					</section>					
 					<section>
 						<h4>#06 Actor model</h4>
-					</section>									
-					<section>
-						<h4>#07 Event sourcing</h4>
 					</section>									
 					<section>
 						<h4>#08 Lambda architecture</h4>
